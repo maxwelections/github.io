@@ -69,3 +69,24 @@ footer {
         margin: 10px 0 0 0;
     }
 }
+
+.image-text-section {
+    display: flex;           /* put children side by side */
+    align-items: flex-start; /* align top edges */
+    gap: 2em;                /* space between image and text */
+    margin: 2em 0;           /* vertical spacing */
+}
+
+.image-container {
+    flex: 0 0 40%;           /* image takes 40% width */
+}
+
+.image-container img {
+    width: 100%;             /* make image fill container */
+    height: auto;
+    display: block;
+}
+
+.text-container {
+    flex: 1;                 /* text takes remaining width */
+}
