@@ -83,7 +83,6 @@ footer {
 
 .image-container img {
     width: 100%;
-    max-width: 600px;  /* set the maximum width you want */
     height: auto;
     display: block;
     border-radius: 8px; /* optional, looks nicer */
