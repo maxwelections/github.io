@@ -22,7 +22,7 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: helvetica;
+	font-family: Georgia, "Times New Roman", serif !important;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -1747,7 +1747,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			font-family: Georgia, "Times New Roman", serif !important;
 			font-weight: 400;
 		}
 
@@ -1756,7 +1756,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: Georgia, "Times New Roman", serif !important;
 		}
 
 		.icon:before {
