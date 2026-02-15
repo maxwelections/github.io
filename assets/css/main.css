@@ -2204,8 +2204,17 @@ input, select, textarea {
   color: #777;
 }
 
-/* Global font override */
+/* === GLOBAL FONT OVERRIDE (GitHub Pages safe) === */
 
-body {
+html {
   font-family: Georgia, "Times New Roman", serif !important;
+}
+
+body,
+#wrapper,
+#main,
+.panel,
+#nav,
+#nav a {
+  font-family: inherit !important;
 }
