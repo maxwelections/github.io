@@ -2203,3 +2203,9 @@ input, select, textarea {
   line-height: 1.4;
   color: #777;
 }
+
+/* Global font override */
+
+body {
+  font-family: Georgia, "Times New Roman", serif !important;
+}
