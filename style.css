@@ -78,7 +78,7 @@ footer {
 }
 
 .image-container {
-    flex: 0 0 auto; /* only as wide as the image */
+    flex: 0 0 50%; /* only as wide as the image */
 }
 
 .image-container img {
