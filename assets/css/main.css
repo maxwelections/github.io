@@ -2203,18 +2203,3 @@ input, select, textarea {
   line-height: 1.4;
   color: #777;
 }
-
-/* === GLOBAL FONT OVERRIDE (GitHub Pages safe) === */
-
-html {
-  font-family: Georgia, "Times New Roman", serif !important;
-}
-
-body,
-#wrapper,
-#main,
-.panel,
-#nav,
-#nav a {
-  font-family: inherit !important;
-}
