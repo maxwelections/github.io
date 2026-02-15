@@ -61,7 +61,7 @@ footer {
     margin-top: 40px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     nav {
         flex-direction: column;
     }
