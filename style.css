@@ -78,15 +78,18 @@ footer {
 }
 
 .image-container {
-    flex: 0 0 40%;           /* image takes 40% width */
+    flex: 0 0 auto; /* only as wide as the image */
 }
 
 .image-container img {
-    width: 100%;             /* make image fill container */
+    width: 100%;
+    max-width: 200px;  /* set the maximum width you want */
     height: auto;
     display: block;
+    border-radius: 8px; /* optional, looks nicer */
 }
 
 .text-container {
     flex: 1;                 /* text takes remaining width */
 }
+
