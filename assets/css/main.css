@@ -2189,3 +2189,17 @@ input, select, textarea {
 			}
 
 		}
+
+/* Published Work text hierarchy */
+
+.published-work a {
+  font-size: 1em;      /* keep title at normal size */
+  font-weight: 400;   /* matches h-theme weight */
+}
+
+.published-work .authors,
+.published-work .details {
+  font-size: 0.8em;   /* smaller than title */
+  line-height: 1.4;
+  color: #777;
+}
