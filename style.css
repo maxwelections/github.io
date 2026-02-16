@@ -136,3 +136,22 @@ h1 {
 .download-btn:hover {
     background-color: #444;
 }
+
+.update-section {
+    text-align: center;
+    margin: 2.5em auto;
+}
+
+.update-text {
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.update-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;  /* controls image size */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
