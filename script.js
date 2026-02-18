@@ -37,9 +37,11 @@ const stateCategories = {
 
 // Colors for each category
 const categoryColors = {
-  1: "#E83B1C",
-  2: "#E1EB2D",
-  3: "#22C72D"
+  1: "#BF1F1F",
+  2: "#EBB531",
+  3: "#F5EE27",
+  4: "#E3FFD1",
+  5: "#42EB00"
 };
 
 // Load the SVG map
