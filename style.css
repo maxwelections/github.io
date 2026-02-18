@@ -156,42 +156,43 @@ h1 {
     border-radius: 8px;
 }
 
+/* MAP CONTAINER */
+
 #map-container {
+  width: 100%;
   max-width: 900px;
-  margin: auto;
+  margin: 20px auto;
 }
 
-svg {
+#us-map {
   width: 100%;
   height: auto;
+  display: block;
 }
 
-path {
-  fill: #d3d3d3;
-  stroke: #ffffff;
-  stroke-width: 1;
-  cursor: pointer;
-  transition: fill 0.2s ease;
-}
-
-path:hover {
-  fill: #4a90e2;
-}
-
-path.active {
-  fill: #e24a4a;
-}
+/* INFO BOX */
 
 #info {
-  margin-top: 15px;
+  text-align: center;
   font-size: 18px;
+  margin: 15px;
+  font-weight: bold;
 }
 
-.hover {
-  fill: #4a90e2 !important;
+/* SVG STYLES (INJECTED INTO SVG VIA JS) */
+
+svg path {
+  fill: #dddddd;
+  stroke: #ffffff;
+  stroke-width: 1;
+  pointer-events: all;
   cursor: pointer;
 }
 
-.active {
-  fill: #e24a4a !important;
+svg path.hover {
+  fill: #6aaed6;
+}
+
+svg path.active {
+  fill: #1f4e79;
 }
