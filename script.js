@@ -51,9 +51,14 @@ mapObject.addEventListener("load", () => {
     });
 
     state.addEventListener("click", () => {
-      states.forEach(s => s.classList.remove("active"));
-      state.classList.add("active");
-      info.textContent = `You clicked ${state.id}`;
-    });
+  states.forEach(s => s.classList.remove("active"));
+  state.classList.add("active");
+
+  const code = state.id;
+  const name = stateNames[code] || code;
+
+  info.textContent = `You clicked ${name}`;
+})
+
   });
 });
