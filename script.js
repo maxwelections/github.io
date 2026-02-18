@@ -20,26 +20,26 @@ const stateText = {
 
 // Categories for each state
 const stateCategories = {
-  AL: 1, AK: 2, AZ: 3, AR: 1,
-  CA: 2, CO: 1, CT: 3, DE: 1,
-  FL: 2, GA: 3, HI: 1, ID: 2,
-  IL: 3, IN: 1, IA: 2, KS: 3,
-  KY: 1, LA: 2, ME: 3, MD: 1,
-  MA: 2, MI: 3, MN: 1, MS: 2,
-  MO: 3, MT: 1, NE: 2, NV: 3,
-  NH: 1, NJ: 2, NM: 3, NY: 1,
-  NC: 2, ND: 3, OH: 1, OK: 2,
-  OR: 3, PA: 1, RI: 2, SC: 3,
-  SD: 1, TN: 2, TX: 3, UT: 1,
-  VT: 2, VA: 3, WA: 1, WV: 2,
-  WI: 3, WY: 1, DC: 2
+  AL: 1, AK: 1, AZ: 1, AR: 1,
+  CA: 1, CO: 1, CT: 1, DE: 1,
+  FL: 2, GA: 2, HI: 2, ID: 1,
+  IL: 1, IN: 1, IA: 1, KS: 1,
+  KY: 1, LA: 1, ME: 1, MD: 1,
+  MA: 1, MI: 1, MN: 1, MS: 1,
+  MO: 1, MT: 1, NE: 1, NV: 1,
+  NH: 1, NJ: 1, NM: 2, NY: 1,
+  NC: 1, ND: 1, OH: 1, OK: 2,
+  OR: 1, PA: 1, RI: 1, SC: 1,
+  SD: 1, TN: 1, TX: 1, UT: 1,
+  VT: 1, VA: 1, WA: 2, WV: 1,
+  WI: 1, WY: 1, DC: 1
 };
 
 // Colors for each category
 const categoryColors = {
-  1: "#d3d3d3",
-  2: "#a6cee3",
-  3: "#1f78b4"
+  1: "#E83B1C",
+  2: "#E1EB2D",
+  3: "#22C72D"
 };
 
 // Load the SVG map
