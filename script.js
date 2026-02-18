@@ -20,7 +20,7 @@ const stateNames = {
 mapObject.addEventListener("load", () => {
   const svgDoc = mapObject.contentDocument;
   const svg = svgDoc.querySelector("svg");
-  const states = svgDoc.querySelectorAll("path[id]");
+  const states = svgDoc.querySelectorAll("g.state path");
 
   // Inject styles into the SVG document
   const style = svgDoc.createElementNS("http://www.w3.org/2000/svg", "style");
