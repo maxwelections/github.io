@@ -56,6 +56,28 @@ const stateText = {
   DC: "District of Columbia – Nation's Capital"
 };
 
+const stateCategories = {
+  AL: 1, AK: 2, AZ: 3, AR: 1,
+  CA: 2, CO: 1, CT: 3, DE: 1,
+  FL: 2, GA: 3, HI: 1, ID: 2,
+  IL: 3, IN: 1, IA: 2, KS: 3,
+  KY: 1, LA: 2, ME: 3, MD: 1,
+  MA: 2, MI: 3, MN: 1, MS: 2,
+  MO: 3, MT: 1, NE: 2, NV: 3,
+  NH: 1, NJ: 2, NM: 3, NY: 1,
+  NC: 2, ND: 3, OH: 1, OK: 2,
+  OR: 3, PA: 1, RI: 2, SC: 3,
+  SD: 1, TN: 2, TX: 3, UT: 1,
+  VT: 2, VA: 3, WA: 1, WV: 2,
+  WI: 3, WY: 1, DC: 2
+};
+
+const categoryColors = {
+  1: "#d3d3d3",
+  2: "#a6cee3",
+  3: "#1f78b4"
+};
+
 mapObject.addEventListener("load", () => {
   const svgDoc = mapObject.contentDocument;
   const svg = svgDoc.querySelector("svg");
