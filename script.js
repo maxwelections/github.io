@@ -4,7 +4,7 @@ const mapObject = document.getElementById("us-map");
 mapObject.addEventListener("load", () => {
   const svgDoc = mapObject.contentDocument;
   const svg = svgDoc.querySelector("svg");
-  const states = svgDoc.querySelectorAll("path");
+  const states = svgDoc.querySelectorAll("path[id]");
 
   // Inject styles into the SVG document
   const style = svgDoc.createElementNS("http://www.w3.org/2000/svg", "style");
