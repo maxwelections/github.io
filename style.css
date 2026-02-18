@@ -186,3 +186,12 @@ path.active {
   margin-top: 15px;
   font-size: 18px;
 }
+
+.hover {
+  fill: #4a90e2 !important;
+  cursor: pointer;
+}
+
+.active {
+  fill: #e24a4a !important;
+}
