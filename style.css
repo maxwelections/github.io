@@ -177,20 +177,3 @@ h1 {
   margin-top: 12px;
   font-weight: 600;
 }
-
-/* SVG interaction styles */
-svg path[data-state] {
-  fill: #d3d3d3;
-  stroke: #ffffff;
-  stroke-width: 1;
-  cursor: pointer;
-  transition: fill 0.15s ease;
-}
-
-svg path[data-state].hover {
-  fill: #4a90e2;
-}
-
-svg path[data-state].active {
-  fill: #e24a4a;
-}
