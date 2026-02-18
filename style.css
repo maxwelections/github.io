@@ -159,9 +159,8 @@ h1 {
 /* MAP CONTAINER */
 
 #map-container {
-  width: 100%;
   max-width: 900px;
-  margin: 20px auto;
+  margin: 2rem auto;
 }
 
 #us-map {
@@ -175,24 +174,23 @@ h1 {
 #info {
   text-align: center;
   font-size: 18px;
-  margin: 15px;
-  font-weight: bold;
+  margin-top: 12px;
+  font-weight: 600;
 }
 
-/* SVG STYLES (INJECTED INTO SVG VIA JS) */
-
-svg path {
-  fill: #dddddd;
+/* SVG interaction styles */
+svg path[data-state] {
+  fill: #d3d3d3;
   stroke: #ffffff;
   stroke-width: 1;
-  pointer-events: all;
   cursor: pointer;
+  transition: fill 0.15s ease;
 }
 
-svg path.hover {
-  fill: #6aaed6;
+svg path[data-state].hover {
+  fill: #4a90e2;
 }
 
-svg path.active {
-  fill: #1f4e79;
+svg path[data-state].active {
+  fill: #e24a4a;
 }
