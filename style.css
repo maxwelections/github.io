@@ -11,6 +11,7 @@ body {
     color: #333;
     background-color: #f9f9f9;
     padding-top: 60px; /* for fixed nav */
+    text-align: center;
 }
 
 header {
@@ -154,4 +155,35 @@ h1 {
     width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+#map-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
+
+path {
+  fill: #d3d3d3;
+  stroke: #ffffff;
+  stroke-width: 1;
+  cursor: pointer;
+  transition: fill 0.2s ease;
+}
+
+path:hover {
+  fill: #4a90e2;
+}
+
+path.active {
+  fill: #e24a4a;
+}
+
+#info {
+  margin-top: 15px;
+  font-size: 18px;
 }
