@@ -19,11 +19,33 @@ const stateNames = {
 
 mapObject.addEventListener("load", () => {
   const svgDoc = mapObject.contentDocument;
+  const svg = svgDoc.querySelector("svg");
 
-  if (!svgDoc) {
-    console.error("SVG did not load");
-    return;
-  }
+  /* 🔹 INJECT SVG-SCOPED CSS (THIS IS THE KEY FIX) */
+  const style = svgDoc.createElementNS(
+    "http://www.w3.org/2000/svg",
+    "style"
+  );
+
+  style.textContent = `
+    path[data-state] {
+      fill: #d3d3d3;
+      stroke: #ffffff;
+      stroke-width: 1;
+      cursor: pointer;
+      transition: fill 0.15s ease;
+    }
+
+    path[data-state].hover {
+      fill: #4a90e2;
+    }
+
+    path[data-state].active {
+      fill: #e24a4a;
+    }
+  `;
+
+  svg.prepend(style);
 
   const states = svgDoc.querySelectorAll("path[data-state]");
 
