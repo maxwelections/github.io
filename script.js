@@ -1,64 +1,27 @@
 const info = document.getElementById("info");
 const mapObject = document.getElementById("us-map");
 
-const stateNames = {
-  AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas",
-  CA: "California", CO: "Colorado", CT: "Connecticut", DE: "Delaware",
-  FL: "Florida", GA: "Georgia", HI: "Hawaii", ID: "Idaho",
-  IL: "Illinois", IN: "Indiana", IA: "Iowa", KS: "Kansas",
-  KY: "Kentucky", LA: "Louisiana", ME: "Maine", MD: "Maryland",
-  MA: "Massachusetts", MI: "Michigan", MN: "Minnesota", MS: "Mississippi",
-  MO: "Missouri", MT: "Montana", NE: "Nebraska", NV: "Nevada",
-  NH: "New Hampshire", NJ: "New Jersey", NM: "New Mexico", NY: "New York",
-  NC: "North Carolina", ND: "North Dakota", OH: "Ohio", OK: "Oklahoma",
-  OR: "Oregon", PA: "Pennsylvania", RI: "Rhode Island", SC: "South Carolina",
-  SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah",
-  VT: "Vermont", VA: "Virginia", WA: "Washington", WV: "West Virginia",
-  WI: "Wisconsin", WY: "Wyoming"
-};
-
 mapObject.addEventListener("load", () => {
   const svgDoc = mapObject.contentDocument;
-  const svg = svgDoc.querySelector("svg");
   const states = svgDoc.querySelectorAll("g.state path");
 
-  // Inject styles into the SVG document
-  const style = svgDoc.createElementNS("http://www.w3.org/2000/svg", "style");
-  style.textContent = `
-    path {
-      fill: #d3d3d3;
-      stroke: #ffffff;
-      stroke-width: 1;
-      cursor: pointer;
-      transition: fill 0.2s ease;
-    }
-    path:hover {
-      fill: #4a90e2;
-    }
-    path.active {
-      fill: #e24a4a;
-    }
-  `;
-  svg.prepend(style);
-
   states.forEach(state => {
+    const code = state.classList[0].toUpperCase();
+
     state.addEventListener("mouseover", () => {
-      info.textContent = `State: ${state.id}`;
+      info.textContent = `State: ${stateNames[code] || code}`;
+      state.classList.add("hover");
     });
 
     state.addEventListener("mouseout", () => {
       info.textContent = "Hover or click a state";
+      state.classList.remove("hover");
     });
 
     state.addEventListener("click", () => {
-  states.forEach(s => s.classList.remove("active"));
-  state.classList.add("active");
-
-  const code = state.id;
-  const name = stateNames[code] || code;
-
-  info.textContent = `You clicked ${name}`;
-})
-
+      states.forEach(s => s.classList.remove("active"));
+      state.classList.add("active");
+      info.textContent = `You clicked ${stateNames[code] || code}`;
+    });
   });
 });
