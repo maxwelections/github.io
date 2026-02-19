@@ -67,9 +67,9 @@ mapObject.addEventListener("load", () => {
   `;
   svg.prepend(style);
 
-  const states = svgDoc.querySelectorAll("[data-state]");
-  
-  states.forEach(state => {
+  const states = svgDoc.querySelectorAll("[data-state]"); // <- updated
+
+states.forEach(state => {
     const code = state.dataset.state;
     const category = stateCategories[code] || 1;
 
@@ -88,10 +88,9 @@ mapObject.addEventListener("load", () => {
     });
 
     // Click behavior
-    //state.addEventListener("click", () => {
-    //  states.forEach(s => s.classList.remove("active"));
-    //  state.classList.add("active");
-    //  info.textContent = "You clicked " + (stateText[code] || code);
+    state.addEventListener("click", () => {
+      states.forEach(s => s.classList.remove("active"));
+      state.classList.add("active");
+      info.textContent = "You clicked " + (stateText[code] || code);
     });
-  });
 });
