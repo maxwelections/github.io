@@ -173,7 +173,7 @@ Place this code in the empty space below. */
 <path class="wy" data-state="WY" d="m 355.3,143.7 -51,-5.3 -57.3,-7.9 -2,10.7 -8.5,54.8 -3.3,21.9 32.1,4.8 44.9,5.7 37.5,3.4 3.7,-44.2 z">
 <title>Wyoming</title></path>
 
-<path class="dc" data-state="DC" d="m 803.5,252 -2.6,-1.8 -1,1.7 .5,.4 .4,.1 .6,.5 .3,.7 -.1,.5 .2,.5 z">
+<path class="dc" data-state="DC" r="5" d="m 803.5,252 -2.6,-1.8 -1,1.7 .5,.4 .4,.1 .6,.5 .3,.7 -.1,.5 .2,.5 z">
 <title>District of Columbia</title></path>
 
 </g>
@@ -295,5 +295,6 @@ Place this code in the empty space below. */
 
 
 </svg>
+
 
 
