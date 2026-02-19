@@ -5,7 +5,12 @@
 <style type="text/css">
 .state {fill:#D0D0D0}                        /* default color for all states not specified below */
 .borders {stroke:#FFFFFF; stroke-width:1}    /* color and width of borders between states */
-.dccircle {display:yes}                      /* set display to yes to show the circle for the District of Columbia, or none to hide it */
+.dccircle {
+    display: inline;        /* makes it visible */
+    fill: #BF1F1F;          /* match category 1 states */
+    stroke: #FFFFFF;        /* optional: match borders */
+    stroke-width: 1;
+}                     /* set display to yes to show the circle for the District of Columbia, or none to hide it */
 .separator1 {stroke:#B0B0B0; stroke-width:2} /* color and width of lines around Alaska and Hawaii */
 
 /* Individual states can be colored as follows:
@@ -295,6 +300,7 @@ Place this code in the empty space below. */
 
 
 </svg>
+
 
 
 
