@@ -67,8 +67,8 @@ mapObject.addEventListener("load", () => {
   `;
   svg.prepend(style);
 
-  const states = svgDoc.querySelectorAll("path[data-state]");
-
+  const states = svgDoc.querySelectorAll("[data-state]");
+  
   states.forEach(state => {
     const code = state.dataset.state;
     const category = stateCategories[code] || 1;
