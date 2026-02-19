@@ -186,13 +186,6 @@ h1 {
   border: 1px solid #000;
 }
 
-.dccircle {
-    display: inline;        /* makes it visible */
-    fill: #BF1F1F;          /* match category 1 states */
-    stroke: #FFFFFF;        /* optional: match borders */
-    stroke-width: 1;
-}
-
 #us-map {
   width: 100%;
   height: auto;
