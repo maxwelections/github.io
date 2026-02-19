@@ -89,10 +89,10 @@ mapObject.addEventListener("load", () => {
     });
 
     // Click behavior
-    //state.addEventListener("click", () => {
-    //  states.forEach(s => s.classList.remove("active"));
-    //  state.classList.add("active");
-    //  info.textContent = "You clicked " + (stateText[code] || code);
+    state.addEventListener("click", () => {
+      states.forEach(s => s.classList.remove("active"));
+      state.classList.add("active");
+      info.textContent = "You clicked " + (stateText[code] || code);
     });
   });
 });
