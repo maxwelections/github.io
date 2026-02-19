@@ -52,24 +52,25 @@ mapObject.addEventListener("load", () => {
   // Inject SVG-scoped CSS for hover and click
   const style = svgDoc.createElementNS("http://www.w3.org/2000/svg", "style");
   style.textContent = `
-    path[data-state] {
+    path[data-state], circle[data-state], polygon[data-state] {
       stroke: #ffffff;
       stroke-width: 1;
       cursor: pointer;
       transition: fill 0.15s ease;
     }
-    path[data-state].hover {
+    path[data-state].hover, circle[data-state].hover, polygon[data-state].hover {
       fill: #ffcc00 !important;
     }
-    path[data-state].active {
+    path[data-state].active, circle[data-state].active, polygon[data-state].active {
       fill: #e24a4a !important;
     }
   `;
   svg.prepend(style);
 
-  const states = svgDoc.querySelectorAll("[data-state]"); // <- updated
+  // Select only fillable shapes with data-state
+  const states = svgDoc.querySelectorAll("path[data-state], circle[data-state], polygon[data-state]");
 
-states.forEach(state => {
+  states.forEach(state => {
     const code = state.dataset.state;
     const category = stateCategories[code] || 1;
 
@@ -88,9 +89,11 @@ states.forEach(state => {
     });
 
     // Click behavior
-    state.addEventListener("click", () => {
-      states.forEach(s => s.classList.remove("active"));
-      state.classList.add("active");
-      info.textContent = "You clicked " + (stateText[code] || code);
+    //state.addEventListener("click", () => {
+    //  states.forEach(s => s.classList.remove("active"));
+    //  state.classList.add("active");
+    //  info.textContent = "You clicked " + (stateText[code] || code);
     });
+  });
 });
+
