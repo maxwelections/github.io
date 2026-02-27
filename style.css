@@ -202,3 +202,18 @@ h1 {
   margin-top: 12px;
   font-weight: 600;
 }
+
+.lab-link {
+    margin-top: 15px;
+}
+
+.lab-link img {
+    width: 140px;      /* controls size */
+    height: auto;
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.lab-link img:hover {
+    opacity: 0.75;
+}
