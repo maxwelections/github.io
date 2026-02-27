@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Global Styles */
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.6;
@@ -13,6 +14,7 @@ body {
     padding-top: 60px; /* for fixed nav */
 }
 
+/* Header */
 header {
     background-color: #24292e; /* GitHub dark color */
     color: #fff;
@@ -43,6 +45,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.logo {
+    font-size: 1.5rem;
+}
+
+/* Container */
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -61,20 +68,57 @@ footer {
     margin-top: 40px;
 }
 
-@media (max-width: 50%) {
+/* Responsive Layout */
+@media (max-width: 768px) {
     nav {
         flex-direction: column;
+        align-items: center;
     }
+
     nav a {
         margin: 10px 0 0 0;
     }
+
+    .image-text-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container {
+        flex: 1;
+        max-width: 100%;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.8rem;
+    }
 }
 
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .text-container ul {
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
+
+/* Image-Text Section */
 .image-text-section {
-    display: flex;           /* put children side by side */
-    align-items: flex-start; /* align top edges */
-    gap: 2em;                /* space between image and text */
-    margin: 2em 0;           /* vertical spacing */
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+    margin: 2em 0;
 }
 
 .image-container {
@@ -91,65 +135,52 @@ footer {
 }
 
 .text-container {
-    flex: 1;                 /* text takes remaining width */
+    flex: 1;
 }
 
 .text-container ul {
-    padding-left: 0;        /* Removes the default padding for the <ul> */
-    list-style-position: inside; /* Ensures the bullet is inside the text */
+    padding-left: 0;
+    list-style-position: inside;
 }
 
 .text-container li {
-    margin-left: 0;         /* Removes extra indentation for list items */
-    list-style-type: disc;  /* Ensures the bullet is displayed properly */
-    line-height: 1.5;       /* Adds space between list items for readability */
-}
-
-.presentation-list {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    padding-left: 20px;   /* controls bullet indent */
-}
-
-.presentation-list li {
     margin-left: 0;
+    list-style-type: disc;
+    line-height: 1.5;
 }
 
-h1 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
+/* PDF Section */
 .pdf-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;   /* centers horizontally */
+    align-items: center;
     gap: 1em;
     margin: 2em 0;
 }
 
 .pdf-viewer {
     width: 100%;
-    max-width: 800px;     /* controls PDF width */
+    max-width: 800px;
     height: 600px;
     border: 1px solid #ccc;
 }
 
 .download-btn {
     display: inline-block;
-    padding: 16px 32px;     /* bigger clickable area */
-    font-size: 1.1rem;     /* larger text */
+    padding: 16px 32px;
+    font-size: 1.1rem;
     font-weight: 600;
     background-color: #24292e;
     color: #fff;
     text-decoration: none;
-    border-radius: 10px;   /* rounder corners */
+    border-radius: 10px;
 }
 
 .download-btn:hover {
     background-color: #444;
 }
 
+/* Update Section */
 .update-section {
     text-align: center;
     margin: 2.5em auto;
@@ -163,27 +194,27 @@ h1 {
 .update-image {
     display: block;
     margin: 0 auto;
-    max-width: 600px;  /* controls image size */
+    max-width: 600px;
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-/* MAP CONTAINER */
+/* Map Container */
 #map-container {
-    display: block;                   /* Ensures it's a block-level element */
-    max-width: 1100px;                 /* Matches the container's max width */
-    width: 100%;                       /* Ensures it takes up the full width of its parent */
-    margin: 2rem auto;                 /* Centers the map horizontally and adds space around it */
-    padding: 0 20px;                   /* Adds space around the container */
-    box-sizing: border-box;            /* Ensures padding is inside the width calculation */
+    display: block;
+    max-width: 1100px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 #us-map {
-    width: 100%;                       /* Ensures the map fills the container */
-    height: auto;                      /* Maintains the aspect ratio of the map */
-    display: block;                    /* Removes extra space below the map */
-    margin: 0 auto;                    /* Ensures the map is centered horizontally */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 #legend {
@@ -205,7 +236,7 @@ h1 {
     border: 1px solid #000;
 }
 
-/* INFO BOX */
+/* Info Box */
 #info {
     text-align: center;
     font-size: 18px;
@@ -213,15 +244,16 @@ h1 {
     font-weight: 600;
 }
 
+/* Lab Links */
 .lab-link {
     margin-top: 25px;
     display: flex;
     align-items: center;
-    gap: 20px; /* space between logos */
+    gap: 20px;
 }
 
 .lab-link img {
-    height: 50px;   /* control logo size */
+    height: 50px;
     width: auto;
     transition: opacity 0.2s ease;
 }
