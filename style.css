@@ -159,48 +159,47 @@ h1 {
 }
 
 /* MAP CONTAINER */
-
 #map-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 2rem auto;
+    display: flex;
+    justify-content: center;    /* Centers the map horizontally */
+    align-items: flex-start;    /* Aligns map to the top */
+    gap: 2rem;                  /* Space between map and legend */
+    max-width: 100%;             /* Ensures it fits within the parent container */
+    margin: 2rem auto;          /* Centers the container */
+    width: 100%;                /* Make sure it uses full available width */
 }
 
 #legend {
-  min-width: 150px;
-  font-family: sans-serif;
+    min-width: 150px;
+    font-family: sans-serif;
 }
 
 .legend-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
 }
 
 .color-box {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  margin-right: 0.5rem;
-  border: 1px solid #000;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 0.5rem;
+    border: 1px solid #000;
 }
 
 #us-map {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;               /* Ensures map fills container width */
+    height: auto;              /* Maintains aspect ratio */
+    display: block;            /* Removes extra space below map */
 }
 
 /* INFO BOX */
-
 #info {
-  text-align: center;
-  font-size: 18px;
-  margin-top: 12px;
-  font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 12px;
+    font-weight: 600;
 }
 
 .lab-link {
