@@ -211,7 +211,7 @@ h1 {
 }
 
 .lab-link img {
-    height: 40px;   /* control logo size */
+    height: 60px;   /* control logo size */
     width: auto;
     transition: opacity 0.2s ease;
 }
