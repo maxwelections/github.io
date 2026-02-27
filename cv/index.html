@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Maxwell M. Clarke</title>
+    <title>Maxwell M. Clarke</title>
     <link rel="stylesheet" href="/style.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWJZ3YBEJY"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-QWJZ3YBEJY');
-    </script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QWJZ3YBEJY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QWJZ3YBEJY');
+</script>
 <body>
     <header>
-        <nav aria-label="Main navigation">
+        <nav>
             <div class="logo"><strong>Maxwell M. Clarke</strong></div>
             <div>
                 <a href="/">Home</a>
@@ -27,14 +29,24 @@
         </nav>
     </header>
 
-    <main id="main-content" class="container">
-        <div class="pdf-wrapper">
-            <h2>Curriculum Vitae</h2>
-            <iframe src="/MMC CV - Version 2025-10-24.pdf" width="100%" height="600px"></iframe>
-            <br><br>
-            <a href="/MMC CV - Version 2025-10-24.pdf" download class="download-btn">Download</a>
-        </div>
-    </main>
+<body>
+
+<div class="pdf-wrapper">
+    <h2>Curriculum Vitae</h2>
+    <iframe 
+        src="/MMC CV - Version 2025-10-24.pdf" 
+        width="60%" 
+        height="600px">
+    </iframe>
+    
+    <br><br>
+
+    <!-- Download Button -->
+    <a href="/MMC CV - Version 2025-10-24.pdf" download class="download-btn">Download</button>
+    </a>
+    
+</div>
+</body>
 
     <footer>
         &copy; 2026 Maxwell M. Clarke. All rights reserved.
