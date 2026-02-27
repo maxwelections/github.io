@@ -94,6 +94,17 @@ footer {
     flex: 1;                 /* text takes remaining width */
 }
 
+.text-container ul {
+    padding-left: 0;        /* Removes the default padding for the <ul> */
+    list-style-position: inside; /* Ensures the bullet is inside the text */
+}
+
+.text-container li {
+    margin-left: 0;         /* Removes extra indentation for list items */
+    list-style-type: disc;  /* Ensures the bullet is displayed properly */
+    line-height: 1.5;       /* Adds space between list items for readability */
+}
+
 .presentation-list {
     margin-top: 5px;
     margin-bottom: 10px;
