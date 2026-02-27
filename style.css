@@ -160,13 +160,19 @@ h1 {
 
 /* MAP CONTAINER */
 #map-container {
-    display: flex;
-    justify-content: center;    /* Centers the map horizontally */
-    align-items: flex-start;    /* Aligns map to the top */
-    gap: 2rem;                  /* Space between map and legend */
-    max-width: 100%;             /* Ensures it fits within the parent container */
-    margin: 2rem auto;          /* Centers the container */
-    width: 100%;                /* Make sure it uses full available width */
+    display: block;                   /* Ensures it's a block-level element */
+    max-width: 1100px;                 /* Matches the container's max width */
+    width: 100%;                       /* Ensures it takes up the full width of its parent */
+    margin: 2rem auto;                 /* Centers the map horizontally and adds space around it */
+    padding: 0 20px;                   /* Adds space around the container */
+    box-sizing: border-box;            /* Ensures padding is inside the width calculation */
+}
+
+#us-map {
+    width: 100%;                       /* Ensures the map fills the container */
+    height: auto;                      /* Maintains the aspect ratio of the map */
+    display: block;                    /* Removes extra space below the map */
+    margin: 0 auto;                    /* Ensures the map is centered horizontally */
 }
 
 #legend {
@@ -186,12 +192,6 @@ h1 {
     display: inline-block;
     margin-right: 0.5rem;
     border: 1px solid #000;
-}
-
-#us-map {
-    width: 100%;               /* Ensures map fills container width */
-    height: auto;              /* Maintains aspect ratio */
-    display: block;            /* Removes extra space below map */
 }
 
 /* INFO BOX */
