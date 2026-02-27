@@ -204,13 +204,15 @@ h1 {
 }
 
 .lab-link {
-    margin-top: 15px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* space between logos */
 }
 
 .lab-link img {
-    width: 140px;      /* controls size */
-    height: auto;
-    display: block;
+    height: 40px;   /* control logo size */
+    width: auto;
     transition: opacity 0.2s ease;
 }
 
