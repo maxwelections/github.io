@@ -20,7 +20,7 @@ const stateText = {
 
 // Categories for each state
 const stateCategories = {
-  AL: 1, AK: 1, AZ: 1, AR: 1,
+  AL: 1, AK: 1, AZ: 2, AR: 1,
   CA: 1, CO: 1, CT: 1, DE: 1,
   FL: 2, GA: 2, HI: 2, ID: 1,
   IL: 1, IN: 1, IA: 1, KS: 1,
